@@ -1,5 +1,5 @@
 ---
-- hosts: localhost #Not sure if this is correct
+- hosts: localhost #Not sure if this is correct, to be fixed when possible
   become: true
   tasks:
     - name: Print OS info
