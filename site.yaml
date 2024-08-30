@@ -3,7 +3,5 @@
   gather_facts: false
   become: false
   tasks:
-    - name: Print OS info
-      ansible.builtin.package:
-        name: apache2
-        state: present
+    - name: Ping destination host
+      ansible.builtin.ping:
