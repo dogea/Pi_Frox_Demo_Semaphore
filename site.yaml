@@ -1,6 +1,7 @@
 ---
 - hosts: localhost #Not sure if this is correct, to be fixed when possible
-  become: true
+  gather_facts: false
+  become: false
   tasks:
     - name: Print OS info
       ansible.builtin.package:
