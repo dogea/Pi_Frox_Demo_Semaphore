@@ -2,6 +2,7 @@
 - name: Apache server installed
   hosts: localhost
   become: true
+  become_user: "dogea"
   tasks:
 
     - name: Install Apache
