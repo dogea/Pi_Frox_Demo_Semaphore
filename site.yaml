@@ -7,13 +7,13 @@
   tasks:
 
     - name: Install Apache
-      ansible.builtin.dnf:
-        name: httpd
+      ansible.builtin.apt:
+        name: apache2
         state: latest
 
     - name: Apache enabled and running
       ansible.builtin.service:
-        name: httpd
+        name: apache2
         enabled: true
         state: started
 
