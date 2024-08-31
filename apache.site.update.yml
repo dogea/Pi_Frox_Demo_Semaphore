@@ -21,4 +21,4 @@
       ansible.builtin.copy:
         src: web.html
         dest: /var/www/html/index.html
-        mode: apache2
+        mode: '644'
