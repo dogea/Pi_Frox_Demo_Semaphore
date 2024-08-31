@@ -8,11 +8,12 @@
 
     - name: Install Apache
       ansible.builtin.dnf:
-        name: apache2
+        name: httpd
+        state: latest
 
     - name: Apache enabled and running
       ansible.builtin.service:
-        name: apache2
+        name: httpd
         enabled: true
         state: started
 
