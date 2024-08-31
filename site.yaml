@@ -1,7 +1,21 @@
 ---
-- hosts: localhost #Not sure if this is correct, to be fixed when possible
-  gather_facts: false
-  become: false
+- name: Apache server installed
+  hosts: localhost
+  become: true
   tasks:
-    - name: Ping destination host
-      ansible.builtin.ping:
+
+    - name: Install Apache
+      ansible.builtin.dnf:
+        name: httpd
+
+    - name: Apache enabled and running
+      ansible.builtin.service:
+        name: httpd
+        enabled: true
+        state: started
+
+    - name: Copy index.html
+      ansible.builtin.copy:
+        src: web.html
+        dest: /var/www/html/index.html
+        mode: '644'
