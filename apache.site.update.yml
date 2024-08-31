@@ -6,19 +6,8 @@
   become_user: root
   tasks:
 
-    - name: Install Apache
-      ansible.builtin.apt:
-        name: apache2
-        state: latest
-
-    - name: Apache enabled and running
-      ansible.builtin.service:
-        name: apache2
-        enabled: true
-        state: started
-
     - name: Copy index.html
       ansible.builtin.copy:
-        src: web.html
+        src: web2.html
         dest: /var/www/html/index.html
         mode: '644'
