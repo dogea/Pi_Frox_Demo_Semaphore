@@ -1,12 +1,12 @@
 ---
-- name: Apache server installed
+- name: Apache server uninstalled
   hosts: localhost
   gather_facts: false
   become: true
   become_user: root
   tasks:
 
-    - name: Install Apache
+    - name: Destroy Apache
       ansible.builtin.apt:
         name: apache2
         state: absent
