@@ -1,6 +1,6 @@
 ---
 - name: Apache server installed
-  hosts: xubuntu
+  hosts: localhost
   become: true
   tasks:
 
