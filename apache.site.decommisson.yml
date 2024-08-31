@@ -6,6 +6,11 @@
   become_user: root
   tasks:
 
+    - name: Destroy Page
+      ansible.builtin.file:
+        path: /var/www/html/web.html
+        state: absent
+
     - name: Destroy Apache
       ansible.builtin.apt:
         name: apache2
