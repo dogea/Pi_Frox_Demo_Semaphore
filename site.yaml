@@ -2,8 +2,7 @@
 - name: Apache server installed
   hosts: localhost
   become: true
-  become_method: sudo
-  become_user: dogea
+  become_user: root
   tasks:
 
     - name: Install Apache
