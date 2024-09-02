@@ -1,0 +1,12 @@
+{
+   "snow_variables":{
+      "font_color":"#ff0000",
+      "short_description":"This is a short description",
+      "description":"This is a description"
+   },
+   "snow_metadata":{
+      "target":"pifrox01",
+      "requester":"David Ogea",
+      "requested_on":"01.09.2024"
+   }
+}
