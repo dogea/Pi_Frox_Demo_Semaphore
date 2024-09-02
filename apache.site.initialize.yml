@@ -16,10 +16,6 @@
         name: apache2
         enabled: true
         state: started
-  
-    - name: List a variable
-      debug:
-        var: font_color
 
     - name: Copy index.html
       ansible.builtin.copy:
