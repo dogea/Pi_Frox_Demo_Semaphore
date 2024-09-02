@@ -1,0 +1,11 @@
+snow_metadata:
+  request_id: "REQ0010002"
+  source_id: "TASK0000060"
+  requeser: "David Ogea"
+  requested_on: "01.09.2024"
+  request_url: "https://dev205957.service-now.com/nav_to.do?uri=sc_request.do?sys_id=9f6392ff47300210829cb3f4116d430d"
+snow_vars:
+  target: "pifrox02"
+  short_description: "This is a Short Description"
+  description: "This is a Description"
+  font_color: "#ff0000"
