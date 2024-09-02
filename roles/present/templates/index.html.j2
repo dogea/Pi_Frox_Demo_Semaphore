@@ -4,14 +4,14 @@
 <title>Pi Frox Demonstrator running on Raspberry Pi Server raspi01</title>
 </header>
 <body style="background-color:#000000;">
-<div style="text-align:center;color:{{ snow_variables.font_color | default("#ffffff") }};">
+<div style="text-align:center;color:{{ font_color | default("#ffffff") }};">
 <div class="tenor-gif-embed" data-postid="192681856280084739" data-share-method="host" data-aspect-ratio="1" data-width="10%">
 <a href="https://tenor.com/view/pedro-racoon-pedro-pedro-pedro-rotating-pedro-racoon-gif-192681856280084739">Pedro Racoon GIF</a>from <a href="https://tenor.com/search/pedro-gifs">Pedro GIFs</a>
 </div>
 <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-<h1>{{ snow_variables.short_description | default("*** MISSING_SHORT_DESCRIPTION ***") }}</h1>
-<div>{{ snow_variables.description | default("*** MISSING_DESCRIPTION ***") }}</div>
-<div>Page deployed on {{ snow_metadata.target | default("*** MISSING_TARGET ***") }} by {{ snow_metadata.requester | default("*** MISSING_REQUESTER ***") }} on the {{ snow_metadata.requested_on | default("*** MISSING_SHORT_REQUESTED_ON ***") }}</div>
+<h1>{{ short_description | default("*** MISSING_SHORT_DESCRIPTION ***") }}</h1>
+<div>{{ description | default("*** MISSING_DESCRIPTION ***") }}</div>
+<div>Page deployed on {{ target | default("*** MISSING_TARGET ***") }} by {{ requester | default("*** MISSING_REQUESTER ***") }} on the {{ requested_on | default("*** MISSING_SHORT_REQUESTED_ON ***") }}</div>
 </div>
 </body>
 </html>

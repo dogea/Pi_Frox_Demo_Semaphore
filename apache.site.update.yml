@@ -6,6 +6,15 @@
   become_user: root
   tasks:
 
+    - name: Set facts for web page
+      ansible.builtin.set_fact:
+        font_color: #00ff00
+        short_description: This is another Short Description
+        description: This is another Description
+        target: pifrox02
+        requester: David Ogea
+        requested_on: 01.09.2024
+
     - name: Copy index.html
       ansible.builtin.copy:
         src: web2.html

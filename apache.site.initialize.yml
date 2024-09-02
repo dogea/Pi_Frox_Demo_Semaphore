@@ -16,6 +16,15 @@
         name: apache2
         enabled: true
         state: started
+  
+    - name: Set facts for web page
+      ansible.builtin.set_fact:
+        font_color: #ff0000
+        short_description: This is a Short Description
+        description: This is a Description
+        target: pifrox02
+        requester: David Ogea
+        requested_on: 01.09.2024
 
     - name: Copy index.html
       ansible.builtin.copy:
