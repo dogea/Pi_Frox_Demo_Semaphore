@@ -1,0 +1,6 @@
+---
+- name: Test Pi Frox Absent Rols
+  hosts: localhost
+  remote_user: root
+  roles: 
+    - absent
