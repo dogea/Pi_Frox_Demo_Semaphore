@@ -18,7 +18,7 @@
         state: started
 
     - name: Copy index.html
-      ansible.builtin.copy:
+      ansible.builtin.template:
         src: roles/present/templates/index.html.j2
         dest: /var/www/html/index.html
         mode: '644'
