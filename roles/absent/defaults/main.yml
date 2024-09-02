@@ -1,4 +1,4 @@
 ---
-# defaults file for role absent
+# defaults file for Pi Frox Demo absent
 
 molecule_test: false
