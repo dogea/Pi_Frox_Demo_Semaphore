@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: David Ogea
+  description: Pi Frox Absent
+  company: Frox AG
+
+  license: GPL-2.0-or-later
+
+  min_ansible_version: 2.15.0
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+  
+  galaxy_tags: []
+
+  dependencies: []
