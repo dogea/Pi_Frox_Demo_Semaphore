@@ -24,8 +24,8 @@
       name: "{{ variables.name | default('Pi Frox Demonstrator') }}"
       state: present
       variables: "{{ variables | default({}) }}"
-      requst_id: "{{ metadata.request_id | default('N/A') }}"
-      task_id: "{{ metadata.task_id | default('N/A') }}"
+      request_id: "{{ metadata.request_id | default('N/A') }}"
+      source_id: "{{ metadata.source_id | default('N/A') }}"
     register: pi_frox_initialize
     until: not pi_frox_initialize.failed
     retries: 3
