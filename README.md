@@ -4,32 +4,32 @@ This is an example Ansible Collection demonstrating a simple use case where Serv
 
 ### Intro
 
-To be defines
+To be defined
 
 ### Getting started
 
-To be defines
+To be defined
 
 ### Structure
 
-To be defines
+To be defined
 
 ### Test
 
-To be defines
+To be defined
 
 ### Setup
 
-To be defines
+To be defined
 
 ### Running Ansible-test integration
 
-To be defines
+To be defined
 
 ### Remarks
 
-To be defines
+To be defined
 
 ### What doe it do?
 
-To be defines
+To be defined
