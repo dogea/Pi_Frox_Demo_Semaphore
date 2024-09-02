@@ -1,9 +1,9 @@
 snow_metadata:
-  request_id: "REQ0010002"
-  source_id: "TASK0000060"
+  request_id: "REQ0010018"
+  source_id: "SCTASK0010036"
   requeser: "David Ogea"
   requested_on: "01.09.2024"
-  request_url: "https://dev205957.service-now.com/nav_to.do?uri=sc_request.do?sys_id=9f6392ff47300210829cb3f4116d430d"
+  request_url: "https://dev229570.service-now.com/nav_to.do?uri=sc_request.do?sys_id=796adf10db25230087999007db9619a4"
 snow_vars:
   target: "pifrox02"
   short_description: "This is a Short Description"
