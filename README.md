@@ -11,16 +11,13 @@ To be defined
 ### Structure
 To be defined
 
-**Collections**<br>
+**meta**<br>
+Contains the ```runtime.yml``` file that tells the engine what version of Ansible is required in order to run.
+
+**roles**<br>
 To be defined
 
-**Meta**<br>
-To be defined
-
-**Roles**<br>
-To be defined
-
-**Vars**<br>
+**vars**<br>
 To be defined
 
 **Playbooks**<br>
