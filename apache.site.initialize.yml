@@ -3,7 +3,7 @@
   hosts: localhost
   gather_facts: false
   become: true
-  become_user: root
+  become_user: semuser
   tasks:
 
     - name: Install Apache
