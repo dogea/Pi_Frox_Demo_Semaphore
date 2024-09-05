@@ -9,7 +9,7 @@
     - name: Install Apache
       ansible.builtin.apt:
         name: apache2
-        state: latest
+        state: present
 
     - name: Apache enabled and running
       ansible.builtin.service:
