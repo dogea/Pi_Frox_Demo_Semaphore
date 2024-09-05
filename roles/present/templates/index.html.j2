@@ -4,14 +4,14 @@
 <title>Pi Frox Demonstrator running on Raspberry Pi Server raspi01</title>
 </header>
 <body style="background-color:#000000;">
-<div style="text-align:center;color:{{ snow_font_color }};">
+<div style="text-align:center;color:{{ snow_font_color | default('#ffffff') }};">
 <div class="tenor-gif-embed" data-postid="192681856280084739" data-share-method="host" data-aspect-ratio="1" data-width="10%">
 <a href="https://tenor.com/view/pedro-racoon-pedro-pedro-pedro-rotating-pedro-racoon-gif-192681856280084739">Pedro Racoon GIF</a>from <a href="https://tenor.com/search/pedro-gifs">Pedro GIFs</a>
 </div>
 <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-<h1>{{ snow_short_description }}</h1>
-<div>{{ snow_description }}</div>
-<div>Page deployed on {{ snow_target }} by {{ snow_requester }} on the {{ snow_requested_on }}</div>
+<h1>{{ snow_short_description | default('*** missing input ***') }}</h1>
+<div>{{ snow_description | default('*** missing input ***' }}</div>
+<div>Page deployed on {{ snow_target | default('*** missing input ***' }} by {{ snow_requester | default('*** missing input ***' }} on the {{ snow_requested_on | default('*** missing input ***' }}</div>
 </div>
 </body>
 </html>
