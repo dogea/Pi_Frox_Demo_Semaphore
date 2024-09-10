@@ -6,6 +6,9 @@
   become_user: root
   tasks:
 
+    - name: Ping host to verify if it is reachable
+      ansible.builtin.ping:
+
     - name: Install Apache
       ansible.builtin.apt:
         name: apache2

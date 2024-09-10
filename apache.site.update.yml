@@ -6,6 +6,9 @@
   become_user: root
   tasks:
 
+    - name: Ping host to verify if it is reachable
+      ansible.builtin.ping:
+
     - name: Deploy index.html to Apache Server
       ansible.builtin.template:
         src: roles/present/templates/index.html.j2
