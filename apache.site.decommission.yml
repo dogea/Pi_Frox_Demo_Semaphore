@@ -14,7 +14,7 @@
         path: /var/www/html/index.html
         state: absent
 
-    - name: Apache service is stoppde
+    - name: Apache service is stopped
       ansible.builtin.service:
         name: apache2
         enabled: false
