@@ -14,7 +14,7 @@
         path: /var/www/html/index.html
         state: absent
 
-    - name: Start Apache service on taget host
+    - name: Stop Apache service on taget host
       ansible.builtin.service:
         name: apache2
         enabled: false
