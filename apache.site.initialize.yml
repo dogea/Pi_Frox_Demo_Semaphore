@@ -1,26 +1,26 @@
 ---
-- name: Apache server installed
+- name: Deploy Pi Frox Demonstrator page on taget host
   hosts: localhost
   gather_facts: false
   become: true
   become_user: root
   tasks:
 
-    - name: Ping host to verify if it is reachable
+    - name: Ping target host to verify if it is reachable
       ansible.builtin.ping:
 
-    - name: Install Apache
+    - name: Install Apache on target host
       ansible.builtin.apt:
         name: apache2
         state: present
 
-    - name: Apache enabled and running
+    - name: Start Apache service on taget host
       ansible.builtin.service:
         name: apache2
         enabled: true
         state: started
 
-    - name: Deploy index.html to Apache Server
+    - name: Deploy Pi Frox Demonstrator page on taget host
       ansible.builtin.template:
         src: roles/present/templates/index.html.j2
         dest: /var/www/html/index.html

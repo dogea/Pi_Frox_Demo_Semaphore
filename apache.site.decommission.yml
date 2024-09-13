@@ -1,26 +1,26 @@
 ---
-- name: Apache server uninstalled
+- name: Decommission Pi Frox Demonstrator page on taget host
   hosts: localhost
   gather_facts: false
   become: true
   become_user: root
   tasks:
 
-    - name: Ping host to verify if it is reachable
+    - name: Ping tartget host to verify if it is reachable
       ansible.builtin.ping:
 
-    - name: Destroy Page
+    - name: Destroy Pi Frox Demonstrator page on taget host
       ansible.builtin.file:
         path: /var/www/html/index.html
         state: absent
 
-    - name: Apache service is stopped
+    - name: Start Apache service on taget host
       ansible.builtin.service:
         name: apache2
         enabled: false
         state: stopped
 
-    - name: Destroy Apache
+    - name: Uninstall Apache on target host
       ansible.builtin.apt:
         name: apache2
         state: absent
