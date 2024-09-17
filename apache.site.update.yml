@@ -9,12 +9,12 @@
     - name: Print variables set in the playbook
       ansible.builtin.debug:
         msg:
-        - "Target: {{ pi_frox_target }}"
-        - "Short Description: {{ pi_frox_short_description }}"
-        - "Description: {{ pi_frox_description }}"
-        - "Requester: {{ pi_frox_requester }}"
-        - "Requested on: {{ pi_frox_requested_on }}"
-        - "Font color: {{ pi_frox_font_color }}"
+          - "Target: {{ pi_frox_target }}"
+          - "Short Description: {{ pi_frox_short_description }}"
+          - "Description: {{ pi_frox_description }}"
+          - "Requester: {{ pi_frox_requester }}"
+          - "Requested on: {{ pi_frox_requested_on }}"
+          - "Font color: {{ pi_frox_font_color }}"
 
     - name: Ping target host to verify if it is reachable
       ansible.builtin.ping:
