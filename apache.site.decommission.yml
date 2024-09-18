@@ -6,7 +6,7 @@
   become_user: root
   tasks:
 
-    - name: Ping tartget host to verify if it is reachable
+    - name: Ping target host to verify if it is reachable
       ansible.builtin.ping:
 
     - name: Destroy Pi Frox Demonstrator page on taget host
