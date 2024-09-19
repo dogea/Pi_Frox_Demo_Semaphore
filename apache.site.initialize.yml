@@ -1,6 +1,6 @@
 ---
 - name: Deploy Pi Frox Demonstrator page on taget host
-  hosts: localhost
+  hosts: {{ pi_frox_target }}
   gather_facts: false
   become: true
   become_user: root
